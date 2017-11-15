@@ -1,8 +1,32 @@
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
-  <modelVersion>4.0.0</modelVersion>
-  <groupId>com.Panurgic.cube</groupId>
-  <artifactId>Cube</artifactId>
-  <version>0.0.1-SNAPSHOT</version>
-  <name>Cube</name>
-  <description>Java microservices bundle</description>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<groupId>com.Panurgic.cube</groupId>
+	<artifactId>Cube</artifactId>
+	<version>0.0.1-SNAPSHOT</version>
+	<name>Cube</name>
+	<description>Java Micro-Services bundle</description>
+
+	<dependencies>
+	</dependencies>
+
+	<plugin>
+		<groupId>org.apache.maven.plugins</groupId>
+		<artifactId>maven-jar-plugin</artifactId>
+		<version>${maven-jar-plugin.version}</version>
+		<executions>
+			<execution>
+				<id>default-jar</id>
+				<phase>package</phase>
+				<goals>
+					<goal>jar</goal>
+				</goals>
+				<configuration>
+					<excludes>
+						<exclude>your_package_folder_here/**</exclude>
+					</excludes>
+				</configuration>
+			</execution>
+		</executions>
+	</plugin>
 </project>
