@@ -1,4 +1,4 @@
-package com.panurgic.kichen;
+package com.cube.core.kichen;
 
 public class SchemaBulider {
 

@@ -8,25 +8,26 @@
 	<description>Java Micro-Services bundle</description>
 
 	<dependencies>
+	
+		<!-- https://mvnrepository.com/artifact/org.hibernate/hibernate-core -->
+		<dependency>
+			<groupId>org.hibernate</groupId>
+			<artifactId>hibernate-core</artifactId>
+			<version>5.1.0.Final</version>
+		</dependency>
+
+		<dependency>
+			<groupId>org.hibernate.javax.persistence</groupId>
+			<artifactId>hibernate-jpa-2.1-api</artifactId>
+			<version>1.0.0.Final</version>
+		</dependency>
+		<!-- https://mvnrepository.com/artifact/mysql/mysql-connector-java -->
+		<dependency>
+			<groupId>mysql</groupId>
+			<artifactId>mysql-connector-java</artifactId>
+			<version>5.1.38</version>
+		</dependency>
+
 	</dependencies>
 
-	<plugin>
-		<groupId>org.apache.maven.plugins</groupId>
-		<artifactId>maven-jar-plugin</artifactId>
-		<version>${maven-jar-plugin.version}</version>
-		<executions>
-			<execution>
-				<id>default-jar</id>
-				<phase>package</phase>
-				<goals>
-					<goal>jar</goal>
-				</goals>
-				<configuration>
-					<excludes>
-						<exclude>your_package_folder_here/**</exclude>
-					</excludes>
-				</configuration>
-			</execution>
-		</executions>
-	</plugin>
 </project>

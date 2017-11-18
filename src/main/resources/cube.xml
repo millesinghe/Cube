@@ -1,0 +1,23 @@
+<cube>
+	<organ name="login" active="true">
+		<cell name="signup">
+			<attributes>
+				<attribute name="fname" type="String" size="50"></attribute>
+				<attribute name="lname" type="String" size="50"></attribute>
+				<attribute name="email" type="String" size="50"></attribute>
+				<attribute name="tele" type="String" size="50"></attribute>
+				<attribute name="username" type="String" size="50"></attribute>
+				<attribute name="pass" type="password" size="50"></attribute>
+			</attributes>
+		</cell>
+		<cell name="signin">
+			<attributes>
+				<attribute name="username" type="String" size="50"></attribute>
+				<attribute name="pass" type="password" size="50"></attribute>
+			</attributes>
+		</cell>
+	</organ>
+	<organ name="db-manager" active="true">
+	
+	</organ>
+</cube>
